@@ -62,7 +62,7 @@ nav {
 .nav-links a {
     text-decoration: none;
     color: #18181B;
-    font-weight: 500;
+    font-weight: 400;
     transition: color 0.3s;
 }
 
@@ -134,24 +134,36 @@ main {
     padding-top: 64px;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: #e91e63;
-    color: #fff;
+/* Services Preview */
+.services-preview {
+    margin-bottom: 3rem;
+}
+
+.services-preview h2 {
+   font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 76px;
+    line-height: normal;
+    color: #BD9A89;
+    padding-top: 50px;
+}
+
+.cta-button { 
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+    padding: 0.6rem 1rem;
+    background-color: #bd9a89ac;
+    color: #000000;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
     transition: background-color 0.3s;
 }
 
 .cta-button:hover {
     background-color: #c2185b;
-}
-
-/* Services Preview */
-.services-preview {
-    margin-bottom: 3rem;
 }
 
 .services-preview h2 {
