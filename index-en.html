@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional nail design studio offering creative and elegant nail art services">
-    <title>Aurea nailstudio | Beautiful Nail Art & Manicures</title>
+    <meta name="description"
+        content="Professional nail design studio offering creative and elegant nail art services">
+    <title>aurea. | Nail Studio</title>
     <link rel="stylesheet" href="css/style.css">
-     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Header with Navigation -->
     <header>
         <nav>
-           <div class="logo">
+            <div class="logo">
                 <a href="index-en.html">
-                    <img src="images/logo.png" alt="Nailstudio logo">
+                    <img src="images/logo.png" alt="aurea. nailstudio">
                 </a>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services-en.html">Services</a></li>
-                <li><a href="gallery-en.html">Gallery</a></li>
-                <li><a href="about-en.html">About</a></li>
-                <li><a href="contact-en.html">Contact</a></li>
-            </ul>
-            <div class="language-switcher">
-                <a href="index.html" class="lang-link">DE</a>
-                <span class="lang-separator">|</span>
-                <a href="index-en.html" class="lang-link active">EN</a>
+            
+            <!-- Hamburger Menu Button (Mobile) -->
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index-en.html">Home</a></li>
+                    <li><a href="services-en.html">Services</a></li>
+                    <li><a href="gallery-en.html">Gallery</a></li>
+                    <li><a href="about-en.html">About me</a></li>
+                    <li><a href="contact-en.html">Contact</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <a href="index.html" class="lang-link">DE</a>
+                    <span class="lang-separator">|</span>
+                    <a href="index-en.html" class="lang-link active">EN</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -39,38 +53,19 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
-                <h2>Beautiful<br>nails,<br>beautiful<br>you.</h2>
+                <h1>Beautiful<br>Nails,<br>Beautiful<br>You.</h1>
             </div>
         </section>
 
-        <!-- Services Preview -->
-        <section class="services-preview">
-            <h2>Expert nail design and care,<br>in a relaxing environment</h2>
+        <!-- Tagline Section -->
+        <section class="tagline-section">
+            <h2>Your place for beauty and healthy<br>nails that last.</h2>
             <a href="contact-en.html" class="cta-button">Contact me</a>
-            <h2>My Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Classic Manicure</h3>
-                    <p>Professional nail shaping, cuticle care, and polish application</p>
-                </div>
-                <div class="service-card">
-                    <h3>Gel Nails</h3>
-                    <p>Long-lasting gel manicures in a variety of colors and finishes</p>
-                </div>
-                <div class="service-card">
-                    <h3>Nail Art</h3>
-                    <p>Custom designs from elegant minimalism to bold creative statements</p>
-                </div>
-            </div>
-            <a href="services-en.html" class="see-more">See All Services & Pricing</a>
         </section>
 
         <!-- Gallery Preview -->
         <section class="gallery-preview">
-            <h2>Our Work</h2>
-            <p>Browse my portfolio of stunning nail designs</p>
             <div class="gallery-grid">
-                <!-- Placeholder for images - you'll add your actual photos later -->
                 <div class="gallery-item">
                     <img src="images/nail-1.jpg" alt="Elegant nail design">
                 </div>
@@ -90,57 +85,55 @@
                     <img src="images/nail-6.jpg" alt="Bold nail design">
                 </div>
             </div>
-            <a href="gallery-en.html" class="see-more">View Full Gallery</a>
-        </section>
-
-        <!-- About Preview -->
-        <section class="about-preview">
-            <h2>Why Choose Us?</h2>
-            <div class="about-content">
-                <div class="about-feature">
-                    <h3>Expert Artists</h3>
-                    <p>Our talented nail technicians bring years of experience and creativity to every appointment</p>
-                </div>
-                <div class="about-feature">
-                    <h3>Premium Products</h3>
-                    <p>We use only high-quality, safe products that are gentle on your nails</p>
-                </div>
-                <div class="about-feature">
-                    <h3>Relaxing Atmosphere</h3>
-                    <p>Enjoy a peaceful, clean environment designed for your comfort and relaxation</p>
-                </div>
-            </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Phone: (555) 123-4567</p>
-                <p>Email: info@nailstudio.com</p>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="aurea. nailstudio">
+                </div>
+                <div class="footer-contact">
+                    <p>+43 (555) 123-4567</p>
+                    <p>aureanailstudio@gmail.com</p>
+                </div>
+                <div class="footer-links">
+                    <a href="impressum-en.html">Imprint</a>
+                    <a href="datenschutz-en.html">Privacy Policy</a>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>Hours</h3>
+            
+            <div class="footer-middle">
+                <h4>Opening Hours</h4>
                 <p>By appointment</p>
             </div>
-            <div class="footer-section">
-                <h3>Location</h3>
-                <p>Fabriksgasse 1/6</p>
-                <p>Fürstenfeld, 8280</p>
+            
+            <div class="footer-right">
+                <div>
+                    <h4>Location</h4>
+                    <p>Fabriksgasse 1/6</p>
+                    <p>Fürstenfeld, 8280</p>
+                </div>
+                <div>
+                    <h4>Follow me</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/nailstudio" target="_blank">
+                            <img src="images/instagram-icon.png" alt="Instagram">
+                            @nailstudio
+                        </a>
+                        <a href="https://facebook.com/nailstudio" target="_blank">
+                            <img src="images/facebook-icon.png" alt="Facebook">
+                            Nailstudio
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <p>Instagram: @nailstudio</p>
-                <p>Facebook: Nail Studio</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Aurea nailstudio. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

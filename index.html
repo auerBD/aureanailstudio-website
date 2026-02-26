@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Professionelles Nageldesign-Studio mit kreativen und eleganten Nagelkunst-Services">
-    <title>Aurea Nailstudio | Schöne Nagelkunst & Maniküre</title>
+    <title>aurea. | Nagelstudio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,20 +20,31 @@
         <nav>
             <div class="logo">
                 <a href="index.html">
-                    <img src="images/logo.png" alt="Nagelstudio logo">
+                    <img src="images/logo.png" alt="aurea. nailstudio">
                 </a>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Leistungen</a></li>
-                <li><a href="gallery.html">Galerie</a></li>
-                <li><a href="about.html">Über mich</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-            </ul>
-            <div class="language-switcher">
-                <a href="index.html" class="lang-link active">DE</a>
-                <span class="lang-separator">|</span>
-                <a href="index-en.html" class="lang-link">EN</a>
+            
+            <!-- Hamburger Menu Button (Mobile) -->
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Leistungen</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="about.html">Über mich</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <a href="index.html" class="lang-link active">DE</a>
+                    <span class="lang-separator">|</span>
+                    <a href="index-en.html" class="lang-link">EN</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -42,37 +54,19 @@
         <!-- Hero Bereich -->
         <section class="hero">
             <div class="hero-content">
-                <h2>Schöne<br>Nägel,<br>Schönes<br>Du.</h2>
+                <h1>Schöne<br>Nägel,<br>Schönes<br>Du.</h1>
             </div>
         </section>
 
-        <!-- Leistungen Vorschau -->
-        <section class="services-preview">
+        <!-- Tagline Section -->
+        <section class="tagline-section">
             <h2>Dein Ort für Schönheit und gesunde<br>Nägel, die lange halten.</h2>
             <a href="contact.html" class="cta-button">Kontaktiere mich</a>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Klassische Maniküre</h3>
-                    <p>Professionelle Nagelformung, Nagelhautpflege und Lackierung</p>
-                </div>
-                <div class="service-card">
-                    <h3>Gel-Nägel</h3>
-                    <p>Langanhaltende Gel-Maniküre in verschiedenen Farben und Finishes</p>
-                </div>
-                <div class="service-card">
-                    <h3>Nagelkunst</h3>
-                    <p>Individuelle Designs vom eleganten Minimalismus bis zum kreativen Statement</p>
-                </div>
-            </div>
-            <a href="services.html" class="see-more">Alle Leistungen & Preise ansehen</a>
         </section>
 
         <!-- Galerie Vorschau -->
         <section class="gallery-preview">
-            <h2>Meine Arbeit</h2>
-            <p>Entdecken Sie mein Portfolio mit atemberaubenden Nageldesigns</p>
             <div class="gallery-grid">
-                <!-- Platzhalter für Bilder - Sie fügen später Ihre echten Fotos hinzu -->
                 <div class="gallery-item">
                     <img src="images/nail-1.jpg" alt="Elegantes Nageldesign">
                 </div>
@@ -92,56 +86,49 @@
                     <img src="images/nail-6.jpg" alt="Mutiges Nageldesign">
                 </div>
             </div>
-            <a href="gallery.html" class="see-more">Vollständige Galerie ansehen</a>
-        </section>
-
-        <!-- Über uns Vorschau -->
-        <section class="about-preview">
-            <h2>Warum mich wählen?</h2>
-            <div class="about-content">
-                <div class="about-feature">
-                    <h3>Erfahrene Künstler</h3>
-                    <p>Unsere talentierten Nageltechniker bringen jahrelange Erfahrung und Kreativität zu jedem Termin
-                        mit</p>
-                </div>
-                <div class="about-feature">
-                    <h3>Premium-Produkte</h3>
-                    <p>Wir verwenden nur hochwertige, sichere Produkte, die schonend für Ihre Nägel sind</p>
-                </div>
-                <div class="about-feature">
-                    <h3>Entspannte Atmosphäre</h3>
-                    <p>Genießen Sie eine friedliche, saubere Umgebung, die für Ihren Komfort und Ihre Entspannung
-                        konzipiert ist</p>
-                </div>
-            </div>
         </section>
     </main>
 
     <!-- Fußzeile -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Kontakt</h3>
-                <p>Telefon: (555) 123-4567</p>
-                <p>E-Mail: info@nailstudio.com</p>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="aurea. nailstudio">
+                </div>
+                <div class="footer-contact">
+                    <p>+43 (555) 123-4567</p>
+                    <p>aureanailstudio@gmail.com</p>
+                </div>
+                <div class="footer-links">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutzerklärung</a>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>Öffnungszeiten</h3>
+            
+            <div class="footer-middle">
+                <h4>Öffnungszeiten</h4>
                 <p>Nach Terminvereinbarung</p>
             </div>
-            <div class="footer-section">
-                <h3>Standort</h3>
-                <p>Fabriksgasse 1/6</p>
-                <p>Fürstenfeld, 8280</p>
+            
+            <div class="footer-right">
+                <div class="footer-location">
+                    <h4>Standort</h4>
+                    <p>Fabriksgasse 1/6</p>
+                    <p>Fürstenfeld, 8280</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Folge mir</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/nailstudio" target="_blank">
+                            <img src="images/instagram-icon.png" alt="Instagram"> @nailstudio
+                        </a>
+                        <a href="https://facebook.com/nailstudio" target="_blank">
+                            <img src="images/facebook-icon.png" alt="Facebook"> Nagelstudio
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>Folgen Sie uns</h3>
-                <p>Instagram: @nailstudio</p>
-                <p>Facebook: Nagelstudio</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Aurea nailstudio. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 
