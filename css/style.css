@@ -357,7 +357,7 @@ main {
     font-size: 16px;
     color: #52525B;
     margin-bottom: 2rem;
-    max-width: 700px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -619,6 +619,102 @@ footer {
 }
 
 /* ============================================
+   GALLERY PAGE STYLES
+   ============================================ */
+
+/* Gallery Hero Section */
+.gallery-hero {
+    position: relative;
+    background-image: url('../images/gallery-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 3rem;
+}
+
+.gallery-hero-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: right;
+    padding-top: 6rem ;
+    padding-left: 5rem;
+}
+
+.gallery-hero h1 {
+    font-family: 'Yeseva One', serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 1;
+    color: #BD9A89;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
+/* Gallery Tagline */
+.gallery-tagline {
+    text-align: center;
+    padding: 4rem 2rem 3rem 2rem;
+    background-color: #FFFFFF;
+}
+
+.gallery-tagline h2 {
+    font-family: 'Yeseva One', serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.4;
+    color: #18181B;
+    margin-bottom: 1rem;
+}
+
+.gallery-tagline p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #52525B;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Gallery Full Grid */
+.gallery-full {
+    padding: 0 3rem 5rem 3rem;
+    background-color: #FFFFFF;
+}
+
+.gallery-full-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-full-item {
+    aspect-ratio: 4/5;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #F4F4F5;
+    transition: transform 0.3s ease;
+}
+
+.gallery-full-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-full-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-full-item:hover img {
+    transform: scale(1.05);
+}
+/* ============================================
    RESPONSIVE DESIGN
    ============================================ */
 
@@ -632,7 +728,7 @@ footer {
     }
 
     .hero h1 {
-        font-size: 64px;
+        font-size: 56px;
     }
 
     .tagline-section h2 {
@@ -799,7 +895,7 @@ footer {
     }
 
     .values-subtitle {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .carousel-slide {
@@ -841,10 +937,41 @@ footer {
 
     .product-quote,
     .voucher-quote {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .voucher-content h2 {
         font-size: 18px;
+    }
+
+    /* Gallery page mobile */
+    .gallery-hero {
+        min-height: 200px;
+        padding: 2rem 1.5rem;
+    }
+
+    .gallery-hero h1 {
+        font-size: 24px;
+    }
+
+    .gallery-tagline {
+        padding: 3rem 1.5rem 2rem 1.5rem;
+    }
+
+    .gallery-tagline h2 {
+        font-size: 18px;
+    }
+
+    .gallery-tagline p {
+        font-size: 12px;
+    }
+
+    .gallery-full {
+        padding: 0 1.5rem 3rem 1.5rem;
+    }
+
+    .gallery-full-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
 }
