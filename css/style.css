@@ -622,38 +622,6 @@ footer {
    GALLERY PAGE STYLES
    ============================================ */
 
-/* Gallery Hero Section */
-.gallery-hero {
-    position: relative;
-    background-image: url('../images/gallery-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 3rem;
-}
-
-.gallery-hero-content {
-    max-width: 1400px;
-    margin: 0 auto;
-    width: 100%;
-    text-align: right;
-    padding-top: 6rem ;
-    padding-left: 5rem;
-}
-
-.gallery-hero h1 {
-    font-family: 'Yeseva One', serif;
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 1;
-    color: #BD9A89;
-    letter-spacing: -0.02em;
-    margin: 0;
-}
-
 /* Gallery Tagline */
 .gallery-tagline {
     text-align: center;
@@ -713,6 +681,92 @@ footer {
 
 .gallery-full-item:hover img {
     transform: scale(1.05);
+}
+/* ============================================
+   SERVICES PAGE STYLES
+   ============================================ */
+
+/* Services Grid Container */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 3rem 5rem 3rem;
+    align-items: center;
+}
+
+/* Services Hero Text */
+.services-hero-text h1 {
+    font-family: 'Yeseva One', serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.3;
+    color: #18181B;
+    text-align: center;
+}
+
+/* Service Text Block */
+.service-text-block {
+    padding: 2rem 0;
+}
+
+.service-text-block-1 h2 {
+    font-family: 'Yeseva One', serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #18181B;
+    text-align: center;
+}
+
+.service-text-block-2 h2 {
+    font-family: 'Yeseva One', serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #18181B;
+    text-align: center;
+}
+
+/* Service Card with Image and Overlay Text */
+.service-card {
+    position: relative;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+.service-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(232, 221, 213, 0.70);
+    padding: 1.5rem 1.5rem;
+    border-radius: 0 0 6px 6px;
+}
+q
+.service-card-overlay h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #18181B;
+    margin-bottom: 0.5rem;
+}
+
+.service-card-overlay p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #18181B;
+    margin: 0;
 }
 /* ============================================
    RESPONSIVE DESIGN
@@ -945,14 +999,6 @@ footer {
     }
 
     /* Gallery page mobile */
-    .gallery-hero {
-        min-height: 200px;
-        padding: 2rem 1.5rem;
-    }
-
-    .gallery-hero h1 {
-        font-size: 24px;
-    }
 
     .gallery-tagline {
         padding: 3rem 1.5rem 2rem 1.5rem;
@@ -973,5 +1019,42 @@ footer {
     .gallery-full-grid {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+    }
+
+    /* Services page mobile */
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .service-card img {
+        min-height: 100px;
+        max-height: 300px;
+    }
+
+    .services-hero-text h1 {
+        font-size: 16px;
+    }
+
+    .service-text-block-1 h2 {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .service-text-block-2 h2 {
+        font-size: 16px;
+    }
+
+    .service-card-overlay {
+        padding: 0.5rem;
+    }
+
+    .service-card-overlay h2 {
+        font-size: 12px;
+    }
+
+    .service-card-overlay p {
+        font-size: 8px;
     }
 }
