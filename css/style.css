@@ -964,29 +964,82 @@ q
    RESPONSIVE DESIGN
    ============================================ */
 
-@media (max-width: 1024px) {
+/* ============================================
+   TABLET RESPONSIVE DESIGN (769px - 1024px)
+   ============================================ */
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    /* Navigation */
     nav {
         padding: 1.5rem 2rem;
     }
 
+    /* Hero Section */
     .hero {
-        padding: 4rem 2rem 2rem 2rem;
+        padding: 4rem 2rem 3rem 2rem;
+        min-height: 400px;
     }
 
     .hero h1 {
-        font-size: 56px;
+        font-size: 64px;
+    }
+
+    /* Tagline Section */
+    .tagline-section {
+        padding: 4rem 2rem;
     }
 
     .tagline-section h2 {
         font-size: 30px;
     }
 
+    /* Gallery Preview */
     .gallery-preview {
-        padding: 0 2rem 1rem 2rem;
+        padding: 0 2rem 3rem 2rem;
     }
 
     .gallery-cta {
-        padding-bottom: 2rem;
+        padding-bottom: 2.5rem;
+    }
+
+    /* Values Section & Carousel */
+    .values-section {
+        padding: 3rem 2rem;
+    }
+
+    .values-section h2 {
+        font-size: 32px;
+    }
+
+    .values-subtitle {
+        font-size: 15px;
+    }
+
+    .carousel-slide {
+        flex: 0 0 calc((100% - 32px) / 2);
+    }
+
+    .value-card img {
+        height: 500px;
+    }
+
+    /* Voucher Section */
+    .voucher-section {
+        padding: 2.5rem 2rem 4rem 2rem;
+        gap: 3rem;
+    }
+
+    .voucher-content {
+        padding-left: 1.5rem;
+    }
+
+    .voucher-quote {
+        font-size: 32px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 3.5rem 2rem 2rem 2rem;
     }
 
     .footer-container {
@@ -998,23 +1051,85 @@ q
         grid-column: 1 / -1;
     }
 
+    /* ABOUT PAGE - Tablet */
     .about-hero {
         gap: 3rem;
         padding: 4rem 2rem;
     }
 
-    .carousel-slide {
-        flex: 0 0 calc((100% - 32px) / 2);
+    .about-hero-content h1 {
+        font-size: 42px;
     }
 
-    .values-section {
+    .about-quote {
+        font-size: 22px;
+    }
+
+    .product-section {
+        padding: 4rem 2rem;
+        gap: 3rem;
+    }
+
+    .product-quote {
+        font-size: 22px;
+    }
+
+    /* GALLERY PAGE - Tablet */
+    .gallery-tagline {
+        padding: 4rem 2rem 3rem 2rem;
+    }
+
+    .gallery-tagline h2 {
+        font-size: 32px;
+    }
+
+    .gallery-full {
+        padding: 0 2rem 4rem 2rem;
+    }
+
+    .gallery-full-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* SERVICES PAGE - Tablet */
+    .services-grid {
+        gap: 2.5rem;
+        padding: 3.5rem 2rem 4rem 2rem;
+    }
+
+    .services-hero-text h1 {
+        font-size: 48px;
+    }
+
+    .service-text-block h2 {
+        font-size: 42px;
+    }
+
+    .service-card-overlay {
         padding: 2rem;
     }
 
-    .product-section,
-    .voucher-section {
-        padding: 3rem 2rem;
-        gap: 3rem;
+    .service-card-overlay h2 {
+        font-size: 28px;
+    }
+
+    .service-card img {
+        max-height: 500px;
+    }
+
+    /* CONTACT PAGE - Tablet */
+    .contact-section {
+        padding: 4rem 2rem;
+    }
+
+    .contact-header h1 {
+        font-size: 42px;
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 }
 
