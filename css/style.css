@@ -54,7 +54,6 @@ nav {
     flex-direction: column;
     background: none;
     border: none;
-    cursor: pointer;
     padding: 0.5rem;
     z-index: 101;
 }
@@ -103,6 +102,7 @@ nav {
     font-weight: 400;
     transition: color 0.3s ease;
     letter-spacing: 0.01em;
+    cursor: pointer;
 }
 
 .nav-links a:hover {
@@ -319,6 +319,8 @@ main {
 
 .about-hero-image {
     position: relative;
+    overflow: hidden;
+    border-radius: 6px;
 }
 
 .about-hero-image img {
@@ -326,6 +328,11 @@ main {
     height: auto;
     object-fit: cover;
     border-radius: 6px;
+    transition: transform 0.4s ease;
+}
+
+.about-hero-image:hover img {
+    transform: scale(1.05);
 }
 
 /* Values Section with Carousel */
@@ -452,6 +459,7 @@ main {
     color: #18181B;
     margin-bottom: 2rem;
     font-style: normal;
+    text-align: center;
 }
 
 .product-content p {
@@ -583,6 +591,33 @@ footer {
     line-height: 1.8;
     color: #18181B;
     font-weight: 400;
+}
+
+.location-link {
+    text-decoration: none;
+    color: #18181B;
+    transition: opacity 0.3s;
+    display: block;
+}
+
+.location-link:hover {
+    opacity: 0.7;
+}
+
+.location-link p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #18181B;
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer-right,
+.footer-location,
+.footer-social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 .footer-right,
@@ -733,6 +768,8 @@ footer {
 /* Service Card with Image and Overlay Text */
 .service-card {
     position: relative;
+    overflow: hidden;
+    border-radius: 6px;
 }
 
 .service-card img {
@@ -743,6 +780,11 @@ footer {
     object-fit: cover;
     border-radius: 6px;
     display: block;
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.05);
 }
 
 .service-card-overlay {
@@ -767,6 +809,156 @@ q
     line-height: 1.8;
     color: #18181B;
     margin: 0;
+}
+
+/* ============================================
+   CONTACT PAGE STYLES
+   ============================================ */
+
+.contact-section {
+    padding: 5rem 3rem;
+    background-color: #FFFFFF;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-header h1 {
+    font-family: 'Yeseva One', serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #18181B;
+    margin-bottom: 1rem;
+}
+
+.contact-header p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #52525B;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-bottom: 4rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #18181B;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    color: #18181B;
+    background-color: #FFFFFF;
+    border: 1.5px solid #E4E4E7;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #18181B;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .cta-button {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Checkbox styling for GDPR consent */
+.checkbox-group {
+    margin-bottom: 1.5rem;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: start;
+    gap: 0.75rem;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    margin-top: 2px;
+    cursor: pointer;
+    accent-color: #18181B;
+}
+
+.checkbox-group span {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.checkbox-group a {
+    color: #18181B;
+    text-decoration: underline;
+    transition: opacity 0.3s;
+}
+
+.checkbox-group a:hover {
+    opacity: 0.7;
+}
+
+/* Contact Info */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-top: 3rem;
+    border-top: 1px solid #F4F4F5;
+}
+
+.contact-info-item h3 {
+    font-family: 'Yeseva One', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #18181B;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info-item p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #52525B;
+}
+
+.contact-info-item a {
+    color: #18181B;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.contact-info-item a:hover {
+    opacity: 0.7;
 }
 /* ============================================
    RESPONSIVE DESIGN
@@ -1024,8 +1216,8 @@ q
     /* Services page mobile */
     .services-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        padding: 3rem 1.5rem;
+        gap: 1rem;
+        padding: 1.5rem 1.5rem;
     }
 
     .service-card img {
@@ -1034,16 +1226,16 @@ q
     }
 
     .services-hero-text h1 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .service-text-block-1 h2 {
-        font-size: 16px;
+        font-size: 18px;
         padding: 0;
     }
 
     .service-text-block-2 h2 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .service-card-overlay {
@@ -1051,10 +1243,37 @@ q
     }
 
     .service-card-overlay h2 {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .service-card-overlay p {
-        font-size: 8px;
+        font-size: 10px;
+    }
+     /* Contact page mobile */
+    .contact-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .contact-header h1 {
+        font-size: 36px;
+    }
+
+    .contact-header p {
+        font-size: 14px;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .checkbox-group label {
+        font-size: 13px;
+    }
+
+    .checkbox-group input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
     }
 }

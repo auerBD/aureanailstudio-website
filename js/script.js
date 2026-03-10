@@ -98,3 +98,77 @@ if (carouselTrack && slides.length > 0) {
   getSlidesVisible();
   updateCarousel();
 }
+
+// Custom form validation messages
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForms = document.querySelectorAll('.contact-form');
+    
+    contactForms.forEach(form => {
+        const nameInput = form.querySelector('input[name="name"]');
+        const emailInput = form.querySelector('input[name="email"]');
+        const messageInput = form.querySelector('textarea[name="message"]');
+        const consentCheckbox = form.querySelector('input[name="consent"]');
+        
+        // Detect language from HTML lang attribute
+        const isGerman = document.documentElement.lang === 'de';
+        
+        // Custom messages
+        const messages = {
+            de: {
+                name: 'Bitte gib deinen Namen ein.',
+                email: 'Bitte gib eine gültige E-Mail-Adresse ein.',
+                message: 'Bitte schreib eine Nachricht.',
+                consent: 'Bitte akzeptiere die Datenschutzerklärung.'
+            },
+            en: {
+                name: 'Please enter your name.',
+                email: 'Please enter a valid email address.',
+                message: 'Please write a message.',
+                consent: 'Please accept the privacy policy.'
+            }
+        };
+        
+        const lang = isGerman ? 'de' : 'en';
+        
+        // Set custom validation messages
+        if (nameInput) {
+            nameInput.addEventListener('invalid', function() {
+                this.setCustomValidity(messages[lang].name);
+            });
+            nameInput.addEventListener('input', function() {
+                this.setCustomValidity('');
+            });
+        }
+        
+        if (emailInput) {
+            emailInput.addEventListener('invalid', function() {
+                if (this.validity.valueMissing) {
+                    this.setCustomValidity(messages[lang].email);
+                } else if (this.validity.typeMismatch) {
+                    this.setCustomValidity(messages[lang].email);
+                }
+            });
+            emailInput.addEventListener('input', function() {
+                this.setCustomValidity('');
+            });
+        }
+        
+        if (messageInput) {
+            messageInput.addEventListener('invalid', function() {
+                this.setCustomValidity(messages[lang].message);
+            });
+            messageInput.addEventListener('input', function() {
+                this.setCustomValidity('');
+            });
+        }
+        
+        if (consentCheckbox) {
+            consentCheckbox.addEventListener('invalid', function() {
+                this.setCustomValidity(messages[lang].consent);
+            });
+            consentCheckbox.addEventListener('change', function() {
+                this.setCustomValidity('');
+            });
+        }
+    });
+});
