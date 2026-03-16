@@ -1376,39 +1376,47 @@ footer {
 
     /* Services page mobile */
     .services-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
         padding: 1.5rem 1.5rem;
     }
 
-    .service-card img {
-        min-height: 100px;
-        max-height: 300px;
-    }
+   /* Target each element by its position in the HTML */
+    .services-grid > div:nth-child(1) { order: 1; } /* Hero text */
+    .services-grid > div:nth-child(2) { order: 2; } /* Neuset card */
+    .services-grid > div:nth-child(4) { order: 3; } /* text-block-1 */
+    .services-grid > div:nth-child(3) { order: 4; } /* Refill card */
+    .services-grid > div:nth-child(5) { order: 5; } /* text-block-2 */
+    .services-grid > div:nth-child(6) { order: 6; } /* Zusatzservice card */
 
     .services-hero-text h1 {
-        font-size: 18px;
+        font-size: 24px;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
     }
 
     .service-text-block-1 h2 {
-        font-size: 18px;
-        padding: 0;
+        font-size: 24px;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
     }
 
     .service-text-block-2 h2 {
-        font-size: 18px;
+        font-size: 24px;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
     }
 
     .service-card-overlay {
-        padding: 0.5rem;
+        padding: 1rem 1rem;
     }
 
     .service-card-overlay h2 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .service-card-overlay p {
-        font-size: 8px;
+        font-size: 12px;
     }
      /* Contact page mobile */
     .contact-section {
