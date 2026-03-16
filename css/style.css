@@ -719,7 +719,7 @@ footer {
     gap: 3rem;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 4rem 3rem 5rem 3rem;
+    padding: 4rem 3rem 2rem 3rem;
     align-items: center;
 }
 
@@ -803,6 +803,34 @@ footer {
     margin: 0;
 }
 
+/* About Me CTA Section */
+.about-cta-section {
+    background-color: #E8DDD5;
+    padding: 5rem 3rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.about-cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-cta-content h2 {
+    font-family: 'Yeseva One', serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: #18181B;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.about-cta-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #18181B;
+    margin-bottom: 2rem;
+}
 /* ============================================
    CONTACT PAGE STYLES
    ============================================ */
@@ -1286,11 +1314,15 @@ footer {
     }
 
     .about-hero-content h1 {
-        font-size: 36px;
+        font-size: 22px;
     }
 
     .about-quote {
         font-size: 20px;
+    }
+
+    .about-text p {
+        font-size: 14px;
     }
 
     .values-section {
@@ -1344,11 +1376,15 @@ footer {
 
     .product-quote,
     .voucher-quote {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .voucher-content h2 {
-        font-size: 18px;
+        font-size: 22px;
+    }
+
+    .voucher-content p {
+    font-size: 14px;
     }
 
     /* Gallery page mobile */
@@ -1358,11 +1394,11 @@ footer {
     }
 
     .gallery-tagline h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .gallery-tagline p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .gallery-full {
@@ -1390,19 +1426,19 @@ footer {
     .services-grid > div:nth-child(6) { order: 6; } /* Zusatzservice card */
 
     .services-hero-text h1 {
-        font-size: 24px;
+        font-size: 20px;
         padding-top: 1rem;
         padding-bottom: 0.5rem;
     }
 
     .service-text-block-1 h2 {
-        font-size: 24px;
+        font-size: 20px;
         padding-top: 1rem;
         padding-bottom: 0.5rem;
     }
 
     .service-text-block-2 h2 {
-        font-size: 24px;
+        font-size: 20px;
         padding-top: 1rem;
         padding-bottom: 0.5rem;
     }
@@ -1416,15 +1452,28 @@ footer {
     }
 
     .service-card-overlay p {
-        font-size: 12px;
+        font-size: 14px;
     }
+
+        .about-cta-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .about-cta-content h2 {
+        font-size: 20px;
+    }
+
+    .about-cta-content p {
+        font-size: 14px;
+    }
+
      /* Contact page mobile */
     .contact-section {
         padding: 4rem 1.5rem;
     }
 
     .contact-header h1 {
-        font-size: 36px;
+        font-size: 20px;
     }
 
     .contact-header p {
