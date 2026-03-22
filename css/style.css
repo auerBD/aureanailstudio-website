@@ -5,12 +5,23 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     line-height: 1.6;
     color: #18181B;
     background-color: #FFFFFF;
+}
+
+main {
+    flex: 1;
 }
 
 /* Header and Navigation */
@@ -1422,6 +1433,7 @@ footer {
 
     .values-subtitle {
         font-size: 14px;
+        margin-bottom: 0rem;
     }
 
     .carousel-slide {
@@ -1489,7 +1501,7 @@ footer {
     }
 
     .gallery-full {
-        padding: 0 1.5rem 3rem 1.5rem;
+        padding: 0 1.5rem 1.5rem 1.5rem;
     }
 
     .gallery-full-grid {
