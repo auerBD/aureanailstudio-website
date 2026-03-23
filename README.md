@@ -2,12 +2,12 @@
 
 A professional, fully responsive bilingual website for a nail studio in Fürstenfeld, Austria. Built from scratch using vanilla HTML, CSS, and JavaScript with a focus on performance, accessibility, and GDPR compliance.
 
-## 🚀 Live Demo
+## Live Demo
 
 - **Production:** [aureanailstudio.at](https://aureanailstudio.at) (Coming soon)
 - **Staging:** [GitHub Pages](https://auerBD.github.io/aureanailstudio-website/)
 
-## 📋 Project Overview
+## Project Overview
 
 This project was developed as a freelance commission for Aurea Nail Studio, a local nail salon in Austria. The client needed a modern, bilingual website to establish their online presence and attract new customers.
 
@@ -15,7 +15,7 @@ This project was developed as a freelance commission for Aurea Nail Studio, a lo
 **Role:** Solo Full-Stack Developer  
 **Client:** Aurea Nail Studio, Fürstenfeld, Austria
 
-## ✨ Features
+## Features
 
 ### Core Functionality
 - **Fully Responsive Design** - Mobile-first approach with custom breakpoints for mobile, tablet, and desktop
@@ -33,7 +33,7 @@ This project was developed as a freelance commission for Aurea Nail Studio, a lo
 - **GDPR Compliant** - Privacy policy, cookie-free analytics, consent management
 - **Privacy-Friendly Analytics** - Plausible Analytics integration (no cookies required)
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Frontend
 - **HTML5** - Semantic markup
@@ -50,7 +50,7 @@ This project was developed as a freelance commission for Aurea Nail Studio, a lo
 - **GitHub Pages** - Staging environment
 - **Git** - Version control
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 aureanailstudio-website/
@@ -75,7 +75,7 @@ aureanailstudio-website/
 └── README.md
 ```
 
-## 🎨 Design
+## Design
 
 - **Typography:** Yeseva One (headings), Manrope (body)
 - **Color Palette:** 
@@ -85,13 +85,13 @@ aureanailstudio-website/
   - Accent: `#BD9A89` (Rose Gold)
 - **Design System:** Custom CSS with consistent spacing, typography scale, and reusable components
 
-## 📱 Responsive Breakpoints
+## Responsive Breakpoints
 
 - **Mobile:** ≤ 768px
 - **Tablet:** 769px - 1024px
 - **Desktop:** > 1024px
 
-## ⚡ Performance
+## Performance
 
 - **PageSpeed Score:** 95+ (target)
 - **First Contentful Paint:** < 1.5s
@@ -104,7 +104,7 @@ aureanailstudio-website/
 - Browser caching
 - Gzip compression
 
-## 🔒 Privacy & Legal Compliance
+## Privacy & Legal Compliance
 
 ### GDPR Compliance
 - ✅ Complete privacy policy (DE/EN)
@@ -120,7 +120,7 @@ aureanailstudio-website/
 - **Plausible Insights OÜ** - Analytics (Estonia, EU)
 - **Google Ireland Limited** - Fonts (Ireland, EU)
 
-## 🌐 Browser Support
+## Browser Support
 
 - ✅ Chrome (latest)
 - ✅ Firefox (latest)
@@ -128,7 +128,7 @@ aureanailstudio-website/
 - ✅ Edge (latest)
 - ✅ Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 🚀 Deployment
+## Deployment
 
 ### Staging (GitHub Pages)
 ```bash
@@ -146,7 +146,7 @@ GitHub Pages automatically deploys to staging environment.
 5. Verify SSL certificate
 6. Test all functionality
 
-## 📝 Development Workflow
+## Development Workflow
 
 ```bash
 # Clone repository
@@ -163,7 +163,7 @@ python3 -m http.server 8000
 # Visit http://localhost:8000
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Basin Contact Form
 1. Sign up at [usebasin.com](https://usebasin.com)
@@ -182,7 +182,7 @@ python3 -m http.server 8000
 <script defer data-domain="aureanailstudio.at" src="https://plausible.io/js/script.js"></script>
 ```
 
-## 🎯 Key Achievements
+## Key Achievements
 
 - ✅ Delivered fully functional bilingual website
 - ✅ Achieved 95+ PageSpeed score
@@ -192,7 +192,7 @@ python3 -m http.server 8000
 - ✅ Custom JavaScript solutions (no jQuery/React needed)
 - ✅ Production deployment on professional hosting
 
-## 🧪 Testing
+## Testing
 
 ### Manual Testing
 - ✅ Tested on 5+ devices (mobile, tablet, desktop)
@@ -207,7 +207,7 @@ python3 -m http.server 8000
 - **PageSpeed Insights** - Performance metrics
 - **W3C Validator** - HTML/CSS validation
 
-## 📊 Project Metrics
+## Project Metrics
 
 - **Total Pages:** 16 (8 German + 8 English)
 - **Lines of Code:** ~3,500
@@ -215,7 +215,7 @@ python3 -m http.server 8000
 - **Image Assets:** 25+ optimized images
 - **Load Time:** <2 seconds
 
-## 💡 Lessons Learned
+## Lessons Learned
 
 ### Technical
 - Mobile-first CSS is essential for modern web development
@@ -238,26 +238,26 @@ python3 -m http.server 8000
 - **Challenge:** Custom carousel without libraries
   - **Solution:** Vanilla JS with responsive breakpoint handling
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 Potential features for future iterations:
 - [ ] Customer review system
 - [ ] Instagram feed integration
 - [ ] Admin dashboard for content updates
 
-## 📄 License
+## License
 
 This is a private client project. All rights reserved.
 
-## 👤 Developer
+## Developer
 
-**Your Name**  
+**Bence Daniel Auer**  
 - Portfolio: [yourportfolio.com](https://yourportfolio.com)
 - LinkedIn: [linkedin.com/in/bence-auer/](https://linkedin.com/in/bence-auer/)
 - GitHub: [@auerBD](https://github.com/auerBD)
 - Email: batfaib@gmail.com
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Client: Bianca, Aurea Nail Studio
 - Design inspiration: Original Figma mockup by client
@@ -268,7 +268,7 @@ This is a private client project. All rights reserved.
 
 **Last Updated:** March 2026
 
-## 📸 Screenshots
+## Screenshots
 
 ### Desktop View
 ![Homepage Desktop](screenshots/desktop-home.png)
