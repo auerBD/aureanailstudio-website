@@ -104,14 +104,14 @@
     <main>
         <!-- Hero Bereich -->
         <section class="hero">
-            <div class="hero-content" data-aos="fade-right" data-aos-duration="800" data-aos-once="false">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="800">
                 <h1>Schöne<br>Nägel,<br>Schönes<br>Du.</h1>
             </div>
         </section>
 
         <!-- Tagline Section -->
         <section class="tagline-section">
-            <h2 data-aos="fade-left" data-aos-duration="800" data-aos-once="false">Dein Ort für Schönheit und gesunde Nägel, die lange halten.
+            <h2 data-aos="fade-left" data-aos-duration="800">Dein Ort für Schönheit und gesunde Nägel, die lange halten.
             </h2>
             <a href="contact.html" class="cta-button">Kontaktiere mich</a>
         </section>
@@ -255,33 +255,32 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/script.js" defer></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-    <script defer>
+<script defer src="js/script.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Clear AOS cache on page load
+        if (localStorage) {
+            localStorage.removeItem('AOS');
+        }
+        
         document.addEventListener('DOMContentLoaded', function () {
             if (typeof AOS !== 'undefined') {
                 AOS.init({
                     duration: 800,
                     easing: 'ease-out',
-                    once: true,
+                    once: false,           // Animate every time
+                    mirror: true,          // Animate on scroll up too
                     offset: 100,
+                    anchorPlacement: 'top-bottom',
+                    disable: window.innerWidth < 768 ? true : false, // Disable on mobile
                 });
+                
+                // Refresh AOS after page fully loads
                 window.addEventListener('load', function () {
                     AOS.refresh();
                 });
             }
         });
     </script>
-
-    <script>
-        if (window.innerWidth < 768) {
-            document.querySelectorAll('.gallery-item, .gallery-full-item').forEach(el => {
-                el.removeAttribute('data-aos');
-                el.removeAttribute('data-aos-delay');
-            });
-        }
-    </script>
 </body>
-
 </html>
