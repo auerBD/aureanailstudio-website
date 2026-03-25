@@ -56,10 +56,9 @@
     </noscript>
 
     <!-- AOS CSS (async) -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
-    <noscript>
+
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    </noscript>
+   
 
     <!-- Plausible Analytics (if using) -->
     <script defer data-domain="aureanailstudio.at" src="https://plausible.io/js/script.js"></script>
@@ -256,13 +255,12 @@
         </div>
     </footer>
 <script defer src="js/script.js"></script>
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script defer>
-document.addEventListener('DOMContentLoaded', function() {
+<script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    // -------------------------------
+<script>
+window.addEventListener('load', function() {
+
     // 1. Disable gallery AOS on mobile
-    // -------------------------------
     if (window.innerWidth < 768) {
         document.querySelectorAll('.gallery-item, .gallery-full-item').forEach(el => {
             el.removeAttribute('data-aos');
@@ -270,33 +268,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // -------------------------------
-    // 2. Reset any previous AOS animations
-    // -------------------------------
+    // 2. Reset animations
     document.querySelectorAll('[data-aos]').forEach(el => {
         el.classList.remove('aos-animate');
     });
 
-    // -------------------------------
-    // 3. Initialize AOS
-    // -------------------------------
-    if (typeof AOS !== 'undefined') {
-        AOS.init({
-            duration: 800,
-            easing: 'ease-out',
-            once: false,           // Animate every time element enters viewport
-            mirror: true,          // Animate on scroll up
-            offset: 100,
-            anchorPlacement: 'top-bottom',
-        });
+    // 3. INIT AOS (guaranteed loaded now)
+    AOS.init({
+        duration: 800,
+        easing: 'ease-out',
+        once: false,
+        mirror: true,
+        offset: 100,
+        anchorPlacement: 'top-bottom',
+    });
 
-        // -------------------------------
-        // 4. Refresh after all images and layout load
-        // -------------------------------
-        window.addEventListener('load', function () {
-            AOS.refreshHard(); // Forces re-calculation of positions
-        });
-    }
+    // 4. Force recalculation
+    AOS.refreshHard();
+
 });
 </script>
 </body>
