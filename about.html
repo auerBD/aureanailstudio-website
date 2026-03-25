@@ -8,6 +8,7 @@
   <title>Über mich | aurea. Nagelstudio</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap"
@@ -74,7 +75,7 @@
         </blockquote>
         <a href="contact.html" class="cta-button">Kontaktiere mich</a>
       </div>
-      <div class="about-hero-image">
+      <div class="about-hero-image" data-aos="fade-left">
         <img src="images/about-hero.jpg" alt="Bianca - Nail Artist">
       </div>
     </section>
@@ -138,27 +139,32 @@
 
     <!-- Product Section -->
     <section class="product-section">
-      <div class="product-content">
+      <div class="product-content" data-aos="fade-right">
         <blockquote class="product-quote">
           "Hochwertige Produkte. Sichtbare Ergebnisse."
         </blockquote>
-        <p>In meinem Studio steht Qualität immer an erster Stelle. Für mich beginnt eine schöne Behandlung nicht erst beim fertigen Nageldesign, sondern schon bei den Produkten und Werkzeugen, mit denen gearbeitet wird.</p>
-        <p>Deshalb lege ich großen Wert darauf, nur mit hochwertigen und sorgfältig ausgewählten Produkten zu arbeiten. Egal ob Instrumente, Handcremes, Pflegeprodukte oder Gele – jedes einzelne Produkt in meinem Studio wurde bewusst ausgesucht. 
-</p>
-        <p>Ich arbeite ausschließlich mit Marken zusammen, von denen ich selbst überzeugt bin und die meinen hohen Ansprüchen an Qualität, Verträglichkeit und Ergebnisse gerecht werden. Denn am Ende geht es nicht nur um schöne Nägel, sondern darum, dass du dich rundum gut aufgehoben und verwöhnt fühlst.
+        <p>In meinem Studio steht Qualität immer an erster Stelle. Für mich beginnt eine schöne Behandlung nicht erst
+          beim fertigen Nageldesign, sondern schon bei den Produkten und Werkzeugen, mit denen gearbeitet wird.</p>
+        <p>Deshalb lege ich großen Wert darauf, nur mit hochwertigen und sorgfältig ausgewählten Produkten zu arbeiten.
+          Egal ob Instrumente, Handcremes, Pflegeprodukte oder Gele – jedes einzelne Produkt in meinem Studio wurde
+          bewusst ausgesucht.
+        </p>
+        <p>Ich arbeite ausschließlich mit Marken zusammen, von denen ich selbst überzeugt bin und die meinen hohen
+          Ansprüchen an Qualität, Verträglichkeit und Ergebnisse gerecht werden. Denn am Ende geht es nicht nur um
+          schöne Nägel, sondern darum, dass du dich rundum gut aufgehoben und verwöhnt fühlst.
         </p>
       </div>
-      <div class="product-image">
+      <div class="product-image" data-aos="fade-left">
         <img src="images/product.jpg" alt="Nail care product">
       </div>
     </section>
 
     <!-- Gift Voucher Section -->
     <section class="voucher-section">
-      <div class="voucher-image">
+      <div class="voucher-image" data-aos="fade-right">
         <img src="images/voucher.jpg" alt="Geschenkgutschein">
       </div>
-      <div class="voucher-content">
+      <div class="voucher-content" data-aos="fade-left">
         <h2>Geschenkgutscheine</h2>
         <p>Verschenke Schönheit und Entspannung mit einem Geschenkgutschein. Ob für ein neues Nageldesign, ein Refill
           oder einen besonderen Zusatzservice – der Gutschein kann individuell eingelöst werden. Das perfekte Geschenk
@@ -195,7 +201,7 @@
       <div class="footer-right">
         <div>
           <h4>Standort</h4>
-            <p>Fürstenfeld, 8280</p>
+          <p>Fürstenfeld, 8280</p>
           </a>
         </div>
         <div>
@@ -212,6 +218,18 @@
   </footer>
 
   <script src="js/script.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,        // Animation duration (ms)
+      easing: 'ease-out',   // Easing function
+      once: true,           // Whether animation should happen only once
+      offset: 70,          // Offset from trigger point (px)
+      delay: 0,             // Delay (ms)
+    });
+  </script>
+
 </body>
 
 </html>

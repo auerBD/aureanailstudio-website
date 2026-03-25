@@ -9,6 +9,7 @@
     <title>aurea. | Nailstudio</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap"
@@ -54,48 +55,48 @@
     <main>
         <!-- Hero Bereich -->
         <section class="hero">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="800">
                 <h1>Beautiful<br>Nails,<br>Beautiful<br>You.</h1>
             </div>
         </section>
 
         <!-- Tagline Section -->
         <section class="tagline-section">
-            <h2>Your place for beauty and long-lasting, healthy nails.</h2>
+            <h2 data-aos="fade-left" data-aos-duration="800">Your place for beauty and long-lasting, healthy nails.</h2>
             <a href="contact-en.html" class="cta-button">Contact me</a>
         </section>
 
         <!-- Galerie Vorschau -->
         <section class="gallery-preview">
             <div class="gallery-grid">
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
                     <img src="images/nail-1.jpg" alt="Elegant naildesign">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
                     <img src="images/nail-2.jpg" alt="Creative nailart">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
                     <img src="images/nail-3.jpg" alt="Gel-manicure design">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
                     <img src="images/nail-4.jpg" alt="Colorful naildesign">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
                     <img src="images/nail-5.jpg" alt="Minimalistic nailart">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
                     <img src="images/nail-6.jpg" alt="Bold nail design">
                 </div>
             </div>
         </section>
 
-        <!-- NEW: Gallery CTA Button -->
+        <!-- Gallery CTA Button -->
         <div class="gallery-cta">
             <a href="gallery-en.html" class="cta-button-outline">To the gallery</a>
         </div>
         </section>
 
-        <!-- NEW: Values Section with Carousel -->
+        <!-- Values Section with Carousel -->
         <section class="values-section">
             <h2>Things I don’t care about as your nail designer:</h2>
             <p class="values-subtitle">Your appointment is your personal me time. You should feel comfortable and not have to worry about anything.</p>
@@ -147,12 +148,12 @@
             </div>
         </section>
 
-        <!-- NEW: Gift Voucher Section -->
+        <!-- Gift Voucher Section -->
         <section class="voucher-section">
-            <div class="voucher-image">
+            <div class="voucher-image" data-aos="fade-right">
                 <img src="images/voucher.jpg" alt="Voucher">
             </div>
-            <div class="voucher-content">
+            <div class="voucher-content" data-aos="fade-left">
                 <h2>Gift vouchers</h2>
                 <p>Give the gift of beauty and relaxation with a gift voucher. Whether for a new set, a refill, or special additional services – the voucher can be used individually. The perfect gift for any occasion. Treat someone to beautiful, well-groomed nails.</p>
                 <blockquote class="voucher-quote">
@@ -203,6 +204,25 @@
     </footer>
 
     <script src="js/script.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,        // Animation duration (ms)
+            easing: 'ease-out',   // Easing function
+            once: true,           // Whether animation should happen only once
+            offset: 40,          // Offset from trigger point (px)
+            delay: 0,             // Delay (ms)
+        });
+    </script>
+
+    <script>
+if (window.innerWidth < 768) {
+  document.querySelectorAll('.gallery-item, .gallery-full-item').forEach(el => {
+    el.removeAttribute('data-aos');
+    el.removeAttribute('data-aos-delay');
+  });
+}
+</script>
 </body>
 
 </html>

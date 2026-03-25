@@ -9,6 +9,7 @@
     <title>aurea. | Nailstudio</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap"
@@ -54,48 +55,47 @@
     <main>
         <!-- Hero Bereich -->
         <section class="hero">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="800">
                 <h1>Schöne<br>Nägel,<br>Schönes<br>Du.</h1>
             </div>
         </section>
 
         <!-- Tagline Section -->
         <section class="tagline-section">
-            <h2>Dein Ort für Schönheit und gesunde Nägel, die lange halten.</h2>
+            <h2 data-aos="fade-left" data-aos-duration="800">Dein Ort für Schönheit und gesunde Nägel, die lange halten.</h2>
             <a href="contact.html" class="cta-button">Kontaktiere mich</a>
         </section>
 
         <!-- Galerie Vorschau -->
         <section class="gallery-preview">
             <div class="gallery-grid">
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
                     <img src="images/nail-1.jpg" alt="Elegantes Nageldesign">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
                     <img src="images/nail-2.jpg" alt="Kreative Nagelkunst">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
                     <img src="images/nail-3.jpg" alt="Gel-Maniküre Design">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
                     <img src="images/nail-4.jpg" alt="Buntes Nageldesign">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
                     <img src="images/nail-5.jpg" alt="Minimalistische Nagelkunst">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
                     <img src="images/nail-6.jpg" alt="Mutiges Nageldesign">
                 </div>
             </div>
         </section>
 
-        <!-- NEW: Gallery CTA Button -->
+        <!-- Gallery CTA Button -->
         <div class="gallery-cta">
             <a href="gallery.html" class="cta-button-outline">Weiter zur Galerie</a>
         </div>
-        </section>
 
-        <!-- NEW: Values Section with Carousel -->
+        <!-- Values Section with Carousel -->
         <section class="values-section">
             <h2>Dinge, die mir egal sind, als deine Nägeldesignerin:</h2>
             <p class="values-subtitle">Dein Termin ist deine persönliche me time. Du solltest dich wohlfühlen und dir
@@ -148,12 +148,12 @@
             </div>
         </section>
 
-        <!-- NEW: Gift Voucher Section -->
+        <!-- Gift Voucher Section -->
         <section class="voucher-section">
-            <div class="voucher-image">
+            <div class="voucher-image" data-aos="fade-right">
                 <img src="images/voucher.jpg" alt="Geschenkgutschein">
             </div>
-            <div class="voucher-content">
+            <div class="voucher-content" data-aos="fade-left">
                 <h2>Geschenkgutscheine</h2>
                 <p>Verschenke Schönheit und Entspannung mit einem Geschenkgutschein. Ob für ein neues Nageldesign, ein Refill oder einen besonderen Zusatzservice – der Gutschein kann individuell eingelöst werden. Das perfekte Geschenk für jeden Anlass. Mach jemandem eine Freude mit gepflegten, wunderschönen Nägeln.</p>
                 <blockquote class="voucher-quote">
@@ -204,6 +204,25 @@
     </footer>
 
     <script src="js/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,        // Animation duration (ms)
+            easing: 'ease-out',   // Easing function
+            once: true,           // Whether animation should happen only once
+            offset: 40,          // Offset from trigger point (px)
+            delay: 0,             // Delay (ms)
+        });
+    </script>
+
+    <script>
+if (window.innerWidth < 768) {
+  document.querySelectorAll('.gallery-item, .gallery-full-item').forEach(el => {
+    el.removeAttribute('data-aos');
+    el.removeAttribute('data-aos-delay');
+  });
+}
+</script>
 </body>
 
 </html>

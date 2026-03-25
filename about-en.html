@@ -8,6 +8,7 @@
   <title>About me | aurea. Nagelstudio</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap"
@@ -56,16 +57,24 @@
       <div class="about-hero-content">
         <h1>So, who am I?</h1>
         <div class="about-text">
-          <p>My passion for nail design began when I realized how much I love aesthetics, details, and creativity. Beautiful nails are more than just a trend to me – they are a small form of art and a way to express personality. I love continuously improving my skills, learning new techniques, and staying up to date with the latest trends.</p>
-          <p>At the same time, it’s very important to me that every design truly suits you and highlights your unique style. In my studio, it’s not only about beautiful nails, but also about creating a relaxing atmosphere where you can feel comfortable and cared for.</p>
-          <p>I place great importance on careful, hygienic work and making sure you feel completely at ease during your time with me. My studio is meant to be a place where you can take a break from everyday life – relaxed, welcoming, and without pressure. I’m looking forward to meeting you and creating your perfect nails together.</p>
+          <p>My passion for nail design began when I realized how much I love aesthetics, details, and creativity.
+            Beautiful nails are more than just a trend to me – they are a small form of art and a way to express
+            personality. I love continuously improving my skills, learning new techniques, and staying up to date with
+            the latest trends.</p>
+          <p>At the same time, it’s very important to me that every design truly suits you and highlights your unique
+            style. In my studio, it’s not only about beautiful nails, but also about creating a relaxing atmosphere
+            where you can feel comfortable and cared for.</p>
+          <p>I place great importance on careful, hygienic work and making sure you feel completely at ease during your
+            time with me. My studio is meant to be a place where you can take a break from everyday life – relaxed,
+            welcoming, and without pressure. I’m looking forward to meeting you and creating your perfect nails
+            together.</p>
         </div>
         <blockquote class="about-quote">
           "Beautiful nails start with passion and attention to detail."
         </blockquote>
         <a href="contact-en.html" class="cta-button">Contact me</a>
       </div>
-      <div class="about-hero-image">
+      <div class="about-hero-image" data-aos="fade-left">
         <img src="images/about-hero.jpg" alt="Bianca - Nail Artist">
       </div>
     </section>
@@ -73,7 +82,8 @@
     <!-- Values Section with Carousel -->
     <section class="values-section">
       <h2>Things I don’t care about as your nail designer:</h2>
-      <p class="values-subtitle">Your appointment is your personal me time. You should feel comfortable and not have to worry about anything.</p>
+      <p class="values-subtitle">Your appointment is your personal me time. You should feel comfortable and not have to
+        worry about anything.</p>
 
       <div class="carousel-container">
         <button class="carousel-btn carousel-btn-prev" aria-label="Previous">
@@ -128,27 +138,38 @@
 
     <!-- Product Section -->
     <section class="product-section">
-      <div class="product-content">
+      <div class="product-content" data-aos="fade-right">
         <blockquote class="product-quote">
           "Beauty begins where quality and care come together."
         </blockquote>
-        <p>In my studio, quality always comes first. For me, a beautiful treatment doesn’t begin with the finished nail design, but with the products, tools, and care that are used throughout the entire process. Every step matters, because true beauty is created through precision, attention to detail, and high-quality materials.</p>
-        <p>That’s why I place great importance on working only with carefully selected, high-quality products. Whether it’s instruments, hand creams, care products, or gels – every product in my studio has been chosen thoughtfully and with purpose. I believe that great results can only be achieved when both technique and products meet the highest standards.</p>
-        <p>I work exclusively with brands that I personally trust and that meet my expectations in terms of quality, compatibility, and long-lasting results. My goal is not only to create beautiful nails, but also to provide a relaxing and comfortable experience. I want you to feel confident that you are in good hands and leave my studio feeling both pampered and happy with your nails.</p>
+        <p>In my studio, quality always comes first. For me, a beautiful treatment doesn’t begin with the finished nail
+          design, but with the products, tools, and care that are used throughout the entire process. Every step
+          matters, because true beauty is created through precision, attention to detail, and high-quality materials.
+        </p>
+        <p>That’s why I place great importance on working only with carefully selected, high-quality products. Whether
+          it’s instruments, hand creams, care products, or gels – every product in my studio has been chosen
+          thoughtfully and with purpose. I believe that great results can only be achieved when both technique and
+          products meet the highest standards.</p>
+        <p>I work exclusively with brands that I personally trust and that meet my expectations in terms of quality,
+          compatibility, and long-lasting results. My goal is not only to create beautiful nails, but also to provide a
+          relaxing and comfortable experience. I want you to feel confident that you are in good hands and leave my
+          studio feeling both pampered and happy with your nails.</p>
       </div>
-      <div class="product-image">
+      <div class="product-image" data-aos="fade-left">
         <img src="images/product.jpg" alt="Nail care product">
       </div>
     </section>
 
     <!-- Gift Voucher Section -->
     <section class="voucher-section">
-      <div class="voucher-image">
+      <div class="voucher-image" data-aos="fade-right">
         <img src="images/voucher.jpg" alt="Voucher">
       </div>
-      <div class="voucher-content">
+      <div class="voucher-content" data-aos="fade-left">
         <h2>Gift vouchers</h2>
-        <p>Give the gift of beauty and relaxation with a gift voucher. Whether for a new set, a refill, or special additional services – the voucher can be used individually. The perfect gift for any occasion. Treat someone to beautiful, well-groomed nails.</p>
+        <p>Give the gift of beauty and relaxation with a gift voucher. Whether for a new set, a refill, or special
+          additional services – the voucher can be used individually. The perfect gift for any occasion. Treat someone
+          to beautiful, well-groomed nails.</p>
         <blockquote class="voucher-quote">
           "Because you deserve a break<br> from everyday life."
         </blockquote>
@@ -197,6 +218,18 @@
   </footer>
 
   <script src="js/script.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,        // Animation duration (ms)
+      easing: 'ease-out',   // Easing function
+      once: true,           // Whether animation should happen only once
+      offset: 70,          // Offset from trigger point (px)
+      delay: 0,             // Delay (ms)
+    });
+  </script>
+
 </body>
 
 </html>

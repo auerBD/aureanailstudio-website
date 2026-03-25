@@ -8,6 +8,7 @@
     <title>Services | aurea. Nail Studio</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap"
@@ -54,10 +55,10 @@
         <!-- Services Grid Layout -->
         <section class="services-grid">
             <!-- Row 1: Hero text left, Image right -->
-            <div class="services-hero-text">
+            <div class="services-hero-text" data-aos="fade-right">
                 <h1>Because every beginning brings something exciting!</h1>
             </div>
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-left">
                 <img src="images/service-neuset.jpg" alt="New set - Nail tools">
                 <div class="service-card-overlay">
                     <h2>New Set</h2>
@@ -66,22 +67,22 @@
             </div>
 
             <!-- Row 2: Image left, Heading right -->
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-right">
                 <img src="images/service-refill.jpg" alt="Refill - Nail polish">
                 <div class="service-card-overlay">
                     <h2>Refill</h2>
                     <p>Refresh, reshape, and maintain your nails for a flawless look.</p>
                 </div>
             </div>
-            <div class="service-text-block-1">
+            <div class="service-text-block-1" data-aos="fade-left">
                 <h2>Why change what's been working so far?</h2>
             </div>
 
             <!-- Row 3: Heading left, Image right -->
-            <div class="service-text-block-2">
+            <div class="service-text-block-2" data-aos="fade-right">
                 <h2>When you want to be a little more extra.</h2>
             </div>
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-left">
                 <img src="images/service-zusatz.jpg" alt="Additional services">
                 <div class="service-card-overlay">
                     <h2>Additional Services</h2>
@@ -102,10 +103,10 @@
 
         <!-- Gift Voucher Section -->
         <section class="voucher-section">
-            <div class="voucher-image">
+            <div class="voucher-image" data-aos="fade-right">
                 <img src="images/voucher.jpg" alt="Gift voucher">
             </div>
-            <div class="voucher-content">
+            <div class="voucher-content" data-aos="fade-left">
                 <h2>Gift Vouchers</h2>
                 <p>Give the gift of beauty and relaxation with a gift voucher. Whether for a new set, a refill, or
                     special additional services – the voucher can be used individually. The perfect gift for any
@@ -159,6 +160,17 @@
     </footer>
 
     <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,        // Animation duration (ms)
+            easing: 'ease-out',   // Easing function
+            once: true,           // Whether animation should happen only once
+            offset: 70,          // Offset from trigger point (px)
+            delay: 0,             // Delay (ms)
+        });
+    </script>
 </body>
 
 </html>
