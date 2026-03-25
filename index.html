@@ -6,42 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="...">
     <title>aurea. | Nailstudio</title>
-    
+
     <!-- DNS Prefetch -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="dns-prefetch" href="https://unpkg.com">
-    
+
     <!-- Favicon, Title image -->
     <link rel="preload" as="image" href="images/titel.webp" type="image/png">
     <link rel="icon" type="image/png" href="images/favicon.png">
-    
+
     <!-- Critical CSS Inline -->
     <style>
-        body { margin: 0; padding: 0; font-family: 'Manrope', sans-serif; }
-        .hero { min-height: 100vh; background-size: cover; background-position: center; }
-        header { position: fixed; top: 0; width: 100%; background: #FFFFFF; z-index: 1000; }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .hero {
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #FFFFFF;
+            z-index: 1000;
+        }
     </style>
-    
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- Preconnect for fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <!-- Google Fonts (async) -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap"
+        media="print" onload="this.media='all'">
     <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap">
     </noscript>
-    
+
     <!-- AOS CSS (async) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
     <noscript>
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     </noscript>
-    
+
     <!-- Plausible Analytics (if using) -->
     <script defer data-domain="aureanailstudio.at" src="https://plausible.io/js/script.js"></script>
 </head>
@@ -92,7 +111,8 @@
 
         <!-- Tagline Section -->
         <section class="tagline-section">
-            <h2 data-aos="fade-left" data-aos-duration="800">Dein Ort für Schönheit und gesunde Nägel, die lange halten.</h2>
+            <h2 data-aos="fade-left" data-aos-duration="800">Dein Ort für Schönheit und gesunde Nägel, die lange halten.
+            </h2>
             <a href="contact.html" class="cta-button">Kontaktiere mich</a>
         </section>
 
@@ -185,7 +205,10 @@
             </div>
             <div class="voucher-content" data-aos="fade-left">
                 <h2>Geschenkgutscheine</h2>
-                <p>Verschenke Schönheit und Entspannung mit einem Geschenkgutschein. Ob für ein neues Nageldesign, ein Refill oder einen besonderen Zusatzservice – der Gutschein kann individuell eingelöst werden. Das perfekte Geschenk für jeden Anlass. Mach jemandem eine Freude mit gepflegten, wunderschönen Nägeln.</p>
+                <p>Verschenke Schönheit und Entspannung mit einem Geschenkgutschein. Ob für ein neues Nageldesign, ein
+                    Refill oder einen besonderen Zusatzservice – der Gutschein kann individuell eingelöst werden. Das
+                    perfekte Geschenk für jeden Anlass. Mach jemandem eine Freude mit gepflegten, wunderschönen Nägeln.
+                </p>
                 <blockquote class="voucher-quote">
                     "Weil Du dir eine Pause<br>vom Alltag verdient hast."
                 </blockquote>
@@ -218,7 +241,7 @@
             <div class="footer-right">
                 <div>
                     <h4>Standort</h4>
-                        <p>Fürstenfeld, 8280</p>
+                    <p>Fürstenfeld, 8280</p>
                     </a>
                 </div>
                 <div>
@@ -233,10 +256,10 @@
         </div>
     </footer>
 
- <script src="js/script.js" defer></script>
+    <script src="js/script.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script defer>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             if (typeof AOS !== 'undefined') {
                 AOS.init({
                     duration: 800,
@@ -244,18 +267,21 @@
                     once: true,
                     offset: 100,
                 });
+                window.addEventListener('load', function () {
+                    AOS.refresh();
+                });
             }
         });
     </script>
-    
+
     <script>
-if (window.innerWidth < 768) {
-  document.querySelectorAll('.gallery-item, .gallery-full-item').forEach(el => {
-    el.removeAttribute('data-aos');
-    el.removeAttribute('data-aos-delay');
-  });
-}
-</script>
+        if (window.innerWidth < 768) {
+            document.querySelectorAll('.gallery-item, .gallery-full-item').forEach(el => {
+                el.removeAttribute('data-aos');
+                el.removeAttribute('data-aos-delay');
+            });
+        }
+    </script>
 </body>
 
 </html>
