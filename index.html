@@ -257,30 +257,47 @@
     </footer>
 <script defer src="js/script.js"></script>
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Clear AOS cache on page load
-        if (localStorage) {
-            localStorage.removeItem('AOS');
-        }
-        
-        document.addEventListener('DOMContentLoaded', function () {
-            if (typeof AOS !== 'undefined') {
-                AOS.init({
-                    duration: 800,
-                    easing: 'ease-out',
-                    once: false,           // Animate every time
-                    mirror: true,          // Animate on scroll up too
-                    offset: 20,
-                    anchorPlacement: 'top-bottom',
-                    disable: window.innerWidth < 768 ? true : false, // Disable on mobile
-                });
-                
-                // Refresh AOS after page fully loads
-                window.addEventListener('load', function () {
-                    AOS.refresh();
-                });
-            }
+    <script defer>
+document.addEventListener('DOMContentLoaded', function() {
+
+    // -------------------------------
+    // 1. Disable gallery AOS on mobile
+    // -------------------------------
+    if (window.innerWidth < 768) {
+        document.querySelectorAll('.gallery-item, .gallery-full-item').forEach(el => {
+            el.removeAttribute('data-aos');
+            el.removeAttribute('data-aos-delay');
         });
-    </script>
+    }
+
+    // -------------------------------
+    // 2. Reset any previous AOS animations
+    // -------------------------------
+    document.querySelectorAll('[data-aos]').forEach(el => {
+        el.classList.remove('aos-animate');
+    });
+
+    // -------------------------------
+    // 3. Initialize AOS
+    // -------------------------------
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out',
+            once: false,           // Animate every time element enters viewport
+            mirror: true,          // Animate on scroll up
+            offset: 100,
+            anchorPlacement: 'top-bottom',
+        });
+
+        // -------------------------------
+        // 4. Refresh after all images and layout load
+        // -------------------------------
+        window.addEventListener('load', function () {
+            AOS.refreshHard(); // Forces re-calculation of positions
+        });
+    }
+});
+</script>
 </body>
 </html>
