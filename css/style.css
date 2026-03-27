@@ -33,7 +33,9 @@ main {
 .services-hero-text,
 .service-card,
 .service-text-block-1,
-.service-text-block-2{
+.service-text-block-2,
+.about-hero-image
+{
   overflow-x: hidden;
 }
 
