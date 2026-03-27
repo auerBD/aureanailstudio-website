@@ -206,11 +206,6 @@
 
             // Mobile optimizations
             if (isMobile) {
-                // Remove gallery animations (performance)
-                document.querySelectorAll('.gallery-item, .gallery-full-item').forEach(el => {
-                    el.removeAttribute('data-aos');
-                    el.removeAttribute('data-aos-delay');
-                });
 
                 // Convert side animations to fade-up (prevents horizontal scroll)
                 document.querySelectorAll('[data-aos="fade-left"], [data-aos="fade-right"]').forEach(el => {

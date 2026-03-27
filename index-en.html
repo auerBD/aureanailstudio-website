@@ -171,29 +171,29 @@
                     <div class="carousel-track">
                         <div class="carousel-slide">
                             <div class="value-card">
-                                <img src="images/value-1.webp" alt="Value 1">
+                                <img src="images/value-1.webp" loading="lazy" alt="Value 1">
                             </div>
                         </div>
 
                         <div class="carousel-slide">
                             <div class="value-card">
-                                <img src="images/value-2.webp" alt="Value 2">
+                                <img src="images/value-2.webp" loading="lazy" alt="Value 2">
                             </div>
                         </div>
 
                         <div class="carousel-slide">
                             <div class="value-card">
-                                <img src="images/value-3.webp" alt="Value 3">
+                                <img src="images/value-3.webp" loading="lazy" alt="Value 3">
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <div class="value-card">
-                                <img src="images/value-4.webp" alt="Value 4">
+                                <img src="images/value-4.webp" loading="lazy" alt="Value 4">
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <div class="value-card">
-                                <img src="images/value-5.webp" alt="Value 5">
+                                <img src="images/value-5.webp" loading="lazy" alt="Value 5">
                             </div>
                         </div>
                     </div>
@@ -210,7 +210,7 @@
         <!-- Gift Voucher Section -->
         <section class="voucher-section">
             <div class="voucher-image" data-aos="fade-right">
-                <img src="images/voucher.webp" alt="Voucher">
+                <img src="images/voucher.webp" loading="lazy" alt="Voucher">
             </div>
             <div class="voucher-content" data-aos="fade-left">
                 <h2>Gift vouchers</h2>
@@ -272,11 +272,6 @@ window.addEventListener('load', function() {
 
     // Mobile optimizations
     if (isMobile) {
-        // Remove gallery animations (performance)
-        document.querySelectorAll('.gallery-item, .gallery-full-item').forEach(el => {
-            el.removeAttribute('data-aos');
-            el.removeAttribute('data-aos-delay');
-        });
         
         // Convert side animations to fade-up (prevents horizontal scroll)
         document.querySelectorAll('[data-aos="fade-left"], [data-aos="fade-right"]').forEach(el => {
