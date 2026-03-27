@@ -5,15 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="...">
-    <title>aurea. | Nailstudio</title>
+    <title>Leistungen | aurea. Nagelstudio</title>
     
     <!-- DNS Prefetch -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="dns-prefetch" href="https://unpkg.com">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+ <!-- Classic favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+
+    <!-- Modern PNG favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512.png">
     
     <!-- Critical CSS Inline -->
     <style>
@@ -35,13 +46,10 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap">
     </noscript>
     
-    <!-- AOS CSS (async) -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
-    <noscript>
+    <!-- AOS CSS -->
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    </noscript>
     
-    <!-- Plausible Analytics (if using) -->
+    <!-- Plausible Analytics -->
     <script defer data-domain="aureanailstudio.at" src="https://plausible.io/js/script.js"></script>
 </head>
 
@@ -89,7 +97,7 @@
                 <h1>Weil jeder Anfang etwas Spannendes bringt!</h1>
             </div>
             <div class="service-card" data-aos="fade-left">
-                <img src="images/service-neuset.jpg" alt="Neuset - Nail tools">
+                <img src="images/service-neuset.webp" alt="Neuset - Nail tools">
                 <div class="service-card-overlay">
                     <h2>Neuset</h2>
                     <p>Perfekt geformte, neue Nägel – individuell nach deinem Stil gestaltet.</p>
@@ -98,7 +106,7 @@
 
             <!-- Row 2: Image left, Heading right -->
             <div class="service-card" data-aos="fade-right">
-                <img src="images/service-refill.jpg" alt="Refill - Nail polish">
+                <img src="images/service-refill.webp" alt="Refill - Nail polish">
                 <div class="service-card-overlay">
                     <h2>Refill</h2>
                     <p>Deine Nägel werden aufgefrischt, stabilisiert und wieder in Form gebracht.</p>
@@ -113,7 +121,7 @@
                 <h2>Wenn du ein bisschen mehr auffallen möchtest.</h2>
             </div>
             <div class="service-card" data-aos="fade-left">
-                <img src="images/service-zusatz.jpg" alt="Zusatzservice - Additional services">
+                <img src="images/service-zusatz.webp" alt="Zusatzservice - Additional services">
                 <div class="service-card-overlay">
                     <h2>Zusatzservice</h2>
                     <p>Extras wie Nail Art, Reparaturen oder besondere Designs.</p>
@@ -134,7 +142,7 @@
         <!-- Gift Voucher Section -->
         <section class="voucher-section">
             <div class="voucher-image" data-aos="fade-right">
-                <img src="images/voucher.jpg" alt="Geschenkgutschein">
+                <img src="images/voucher.webp" alt="Geschenkgutschein">
             </div>
             <div class="voucher-content" data-aos="fade-left">
                 <h2>Geschenkgutscheine</h2>
@@ -189,19 +197,46 @@
             </div>
         </div>
     </footer>
-
-    <script defer src="js/script.js"></script>
+   <script defer src="js/script.js"></script>
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script defer>
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof AOS !== 'undefined') {
-                AOS.init({
-                    duration: 800,
-                    easing: 'ease-out',
-                    once: true,
-                    offset: 100,
+
+    <script>
+        window.addEventListener('load', function () {
+            const isMobile = window.innerWidth < 768;
+
+            // Mobile optimizations
+            if (isMobile) {
+                // Remove gallery animations (performance)
+                document.querySelectorAll('.gallery-item, .gallery-full-item').forEach(el => {
+                    el.removeAttribute('data-aos');
+                    el.removeAttribute('data-aos-delay');
+                });
+
+                // Convert side animations to fade-up (prevents horizontal scroll)
+                document.querySelectorAll('[data-aos="fade-left"], [data-aos="fade-right"]').forEach(el => {
+                    el.setAttribute('data-aos', 'fade-up');
+                    el.setAttribute('data-aos-duration', '600');
                 });
             }
+
+            // Reset all animations
+            document.querySelectorAll('[data-aos]').forEach(el => {
+                el.classList.remove('aos-animate');
+            });
+
+            // Initialize AOS
+            AOS.init({
+                duration: isMobile ? 600 : 800,  // Faster on mobile
+                easing: 'ease-out',
+                once: false,
+                mirror: !isMobile,  // No mirror on mobile (performance)
+                offset: isMobile ? 50 : 70,  // Lower trigger point on mobile
+                anchorPlacement: 'top-bottom',
+                disable: false,
+            });
+
+            // Force recalculation
+            AOS.refreshHard();
         });
     </script>
 </body>

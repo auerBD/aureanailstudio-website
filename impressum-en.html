@@ -5,15 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="...">
-    <title>aurea. | Nailstudio</title>
+    <title>Legal Notice | aurea. Nagelstudio</title>
     
     <!-- DNS Prefetch -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="dns-prefetch" href="https://unpkg.com">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+ <!-- Classic favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+
+    <!-- Modern PNG favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512.png">
     
     <!-- Critical CSS Inline -->
     <style>
@@ -35,13 +46,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap">
     </noscript>
     
-    <!-- AOS CSS (async) -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    </noscript>
-    
-    <!-- Plausible Analytics (if using) -->
+    <!-- Plausible Analytics -->
     <script defer data-domain="aureanailstudio.at" src="https://plausible.io/js/script.js"></script>
 </head>
 
@@ -188,21 +193,7 @@
             </div>
         </div>
     </footer>
-
     <script defer src="js/script.js"></script>
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script defer>
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof AOS !== 'undefined') {
-                AOS.init({
-                    duration: 800,
-                    easing: 'ease-out',
-                    once: true,
-                    offset: 100,
-                });
-            }
-        });
-    </script>
 </body>
 
 </html>

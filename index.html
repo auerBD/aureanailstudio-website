@@ -12,9 +12,22 @@
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="dns-prefetch" href="https://unpkg.com">
 
-    <!-- Favicon, Title image -->
-    <link rel="preload" as="image" href="images/titel.webp" type="image/png">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Title image -->
+    <link rel="preload" as="image" href="images/titel.webp" type="image/webp">
+
+    <!-- Classic favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+
+    <!-- Modern PNG favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512.png">
 
     <!-- Critical CSS Inline -->
     <style>
@@ -55,12 +68,12 @@
             href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap">
     </noscript>
 
-    <!-- AOS CSS (async) -->
+    <!-- AOS CSS -->
 
-        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-   
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
-    <!-- Plausible Analytics (if using) -->
+
+    <!-- Plausible Analytics -->
     <script defer data-domain="aureanailstudio.at" src="https://plausible.io/js/script.js"></script>
 </head>
 
@@ -119,22 +132,22 @@
         <section class="gallery-preview">
             <div class="gallery-grid">
                 <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
-                    <img src="images/nail-1.jpg" loading="lazy" alt="Elegantes Nageldesign">
+                        <img src="images/nail-1.webp" loading="lazy" alt="Elegantes Nageldesign">
                 </div>
                 <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
-                    <img src="images/nail-2.jpg" loading="lazy" alt="Kreative Nagelkunst">
+                        <img src="images/nail-2.webp" loading="lazy" alt="Kreative Nagelkunst">
                 </div>
                 <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
-                    <img src="images/nail-3.jpg" loading="lazy" alt="Gel-Maniküre Design">
+                        <img src="images/nail-3.webp" loading="lazy" alt="Gel-Maniküre Design">
                 </div>
                 <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
-                    <img src="images/nail-4.jpg" loading="lazy" alt="Buntes Nageldesign">
+                        <img src="images/nail-4.webp" loading="lazy" alt="Buntes Nageldesign">
                 </div>
                 <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
-                    <img src="images/nail-5.jpg" loading="lazy" alt="Minimalistische Nagelkunst">
+                        <img src="images/nail-5.webp" loading="lazy" alt="Minimalistische Nagelkunst">
                 </div>
                 <div class="gallery-item" data-aos="fade-up" data-aos-duration="500">
-                    <img src="images/nail-6.jpg" loading="lazy" alt="Mutiges Nageldesign">
+                        <img src="images/nail-6.webp" loading="lazy" alt="Mutiges Nageldesign">
                 </div>
             </div>
         </section>
@@ -161,29 +174,29 @@
                     <div class="carousel-track">
                         <div class="carousel-slide">
                             <div class="value-card">
-                                <img src="images/value-1.jpg" alt="Value 1">
+                                <img src="images/value-1.webp" alt="Value 1">
                             </div>
                         </div>
 
                         <div class="carousel-slide">
                             <div class="value-card">
-                                <img src="images/value-2.jpg" alt="Value 2">
+                                <img src="images/value-2.webp" alt="Value 2">
                             </div>
                         </div>
 
                         <div class="carousel-slide">
                             <div class="value-card">
-                                <img src="images/value-3.jpg" alt="Value 3">
+                                <img src="images/value-3.webp" alt="Value 3">
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <div class="value-card">
-                                <img src="images/value-4.jpg" alt="Value 4">
+                                <img src="images/value-4.webp" alt="Value 4">
                             </div>
                         </div>
                         <div class="carousel-slide">
                             <div class="value-card">
-                                <img src="images/value-5.jpg" alt="Value 5">
+                                <img src="images/value-5.webp" alt="Value 5">
                             </div>
                         </div>
                     </div>
@@ -200,7 +213,7 @@
         <!-- Gift Voucher Section -->
         <section class="voucher-section">
             <div class="voucher-image" data-aos="fade-right">
-                <img src="images/voucher.jpg" alt="Geschenkgutschein">
+                <img src="images/voucher.webp" alt="Geschenkgutschein">
             </div>
             <div class="voucher-content" data-aos="fade-left">
                 <h2>Geschenkgutscheine</h2>
@@ -254,39 +267,48 @@
             </div>
         </div>
     </footer>
-<script defer src="js/script.js"></script>
-<script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script>
-window.addEventListener('load', function() {
+    <script>
+        window.addEventListener('load', function () {
+            const isMobile = window.innerWidth < 768;
 
-    // 1. Disable gallery AOS on mobile
-    if (window.innerWidth < 768) {
-        document.querySelectorAll('.gallery-item, .gallery-full-item').forEach(el => {
-            el.removeAttribute('data-aos');
-            el.removeAttribute('data-aos-delay');
+            // Mobile optimizations
+            if (isMobile) {
+                // Remove gallery animations (performance)
+                document.querySelectorAll('.gallery-item, .gallery-full-item').forEach(el => {
+                    el.removeAttribute('data-aos');
+                    el.removeAttribute('data-aos-delay');
+                });
+
+                // Convert side animations to fade-up (prevents horizontal scroll)
+                document.querySelectorAll('[data-aos="fade-left"], [data-aos="fade-right"]').forEach(el => {
+                    el.setAttribute('data-aos', 'fade-up');
+                    el.setAttribute('data-aos-duration', '600');
+                });
+            }
+
+            // Reset all animations
+            document.querySelectorAll('[data-aos]').forEach(el => {
+                el.classList.remove('aos-animate');
+            });
+
+            // Initialize AOS
+            AOS.init({
+                duration: isMobile ? 600 : 800,  // Faster on mobile
+                easing: 'ease-out',
+                once: false,
+                mirror: !isMobile,  // No mirror on mobile (performance)
+                offset: isMobile ? 50 : 70,  // Lower trigger point on mobile
+                anchorPlacement: 'top-bottom',
+                disable: false,
+            });
+
+            // Force recalculation
+            AOS.refreshHard();
         });
-    }
-
-    // 2. Reset animations
-    document.querySelectorAll('[data-aos]').forEach(el => {
-        el.classList.remove('aos-animate');
-    });
-
-    // 3. INIT AOS (guaranteed loaded now)
-    AOS.init({
-        duration: 800,
-        easing: 'ease-out',
-        once: false,
-        mirror: true,
-        offset: 100,
-        anchorPlacement: 'top-bottom',
-    });
-
-    // 4. Force recalculation
-    AOS.refreshHard();
-
-});
-</script>
+    </script>
 </body>
+
 </html>
