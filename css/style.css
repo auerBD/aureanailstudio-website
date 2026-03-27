@@ -26,6 +26,17 @@ main {
     flex: 1;
 }
 
+.hero,
+.tagline-section,
+.voucher-section,
+.product-section,
+.services-hero-text,
+.service-card,
+.service-text-block-1,
+.service-text-block-2{
+  overflow-x: hidden;
+}
+
 /* Header and Navigation */
 header {
     background-color: #FFFFFF;
