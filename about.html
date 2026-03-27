@@ -2,58 +2,80 @@
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="...">
-    <title>Über mich | aurea. Nagelstudio</title>
-    
-    <!-- DNS Prefetch -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="dns-prefetch" href="https://unpkg.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="...">
+  <title>Über mich | aurea. Nagelstudio</title>
 
-    <!-- About image -->
-    <link rel="preload" as="image" href="images/about-hero.webp" type="image/webp">
-    
-    <!-- Classic favicon -->
-    <link rel="icon" href="images/favicon.ico" sizes="any">
+  <!-- DNS Prefetch -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://unpkg.com">
 
-    <!-- Modern PNG favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+  <!-- About image -->
+  <link rel="preload" as="image" href="images/about-hero.webp" type="image/webp">
 
-    <!-- Apple -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <!-- Classic favicon -->
+  <link rel="icon" href="images/favicon.ico" sizes="any">
 
-    <!-- Android -->
-    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512.png">
-    
-    <!-- Critical CSS Inline -->
-    <style>
-        body { margin: 0; padding: 0; font-family: 'Manrope', sans-serif; }
-        .hero { min-height: 100vh; background-size: cover; background-position: center; }
-        header { position: fixed; top: 0; width: 100%; background: #FFFFFF; z-index: 1000; }
-    </style>
-    
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Preconnect for fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Google Fonts (async) -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap">
-    </noscript>
-    
-    <!-- AOS CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    
-    <!-- Plausible Analytics (if using) -->
-    <script defer data-domain="aureanailstudio.at" src="https://plausible.io/js/script.js"></script>
+  <!-- Modern PNG favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+
+  <!-- Apple -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+  <!-- Android -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512.png">
+
+  <!-- Critical CSS Inline -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #FFFFFF;
+      z-index: 1000;
+    }
+  </style>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts (async) -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Manrope:wght@300;400;500;600&display=swap">
+  </noscript>
+
+  <!-- AOS CSS (async) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  </noscript>
+
+  <!-- Plausible Analytics (if using) -->
+  <script defer data-domain="aureanailstudio.at" src="https://plausible.io/js/script.js"></script>
 </head>
 
 <body>
@@ -257,48 +279,48 @@
       </div>
     </div>
   </footer>
-    <script defer src="js/script.js"></script>
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="js/script.js"></script>
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
-        window.addEventListener('load', function () {
-            const isMobile = window.innerWidth < 768;
+  <script>
+    window.addEventListener('load', function () {
+      const isMobile = window.innerWidth < 768;
 
-            // Mobile optimizations
-            if (isMobile) {
-                // Remove gallery animations (performance)
-                document.querySelectorAll('.gallery-item, .gallery-full-item').forEach(el => {
-                    el.removeAttribute('data-aos');
-                    el.removeAttribute('data-aos-delay');
-                });
-
-                // Convert side animations to fade-up (prevents horizontal scroll)
-                document.querySelectorAll('[data-aos="fade-left"], [data-aos="fade-right"]').forEach(el => {
-                    el.setAttribute('data-aos', 'fade-up');
-                    el.setAttribute('data-aos-duration', '600');
-                });
-            }
-
-            // Reset all animations
-            document.querySelectorAll('[data-aos]').forEach(el => {
-                el.classList.remove('aos-animate');
-            });
-
-            // Initialize AOS
-            AOS.init({
-                duration: isMobile ? 600 : 800,  // Faster on mobile
-                easing: 'ease-out',
-                once: false,
-                mirror: !isMobile,  // No mirror on mobile (performance)
-                offset: isMobile ? 50 : 70,  // Lower trigger point on mobile
-                anchorPlacement: 'top-bottom',
-                disable: false,
-            });
-
-            // Force recalculation
-            AOS.refreshHard();
+      // Mobile optimizations
+      if (isMobile) {
+        // Remove gallery animations (performance)
+        document.querySelectorAll('.gallery-item, .gallery-full-item').forEach(el => {
+          el.removeAttribute('data-aos');
+          el.removeAttribute('data-aos-delay');
         });
-    </script>
+
+        // Convert side animations to fade-up (prevents horizontal scroll)
+        document.querySelectorAll('[data-aos="fade-left"], [data-aos="fade-right"]').forEach(el => {
+          el.setAttribute('data-aos', 'fade-up');
+          el.setAttribute('data-aos-duration', '600');
+        });
+      }
+
+      // Reset all animations
+      document.querySelectorAll('[data-aos]').forEach(el => {
+        el.classList.remove('aos-animate');
+      });
+
+      // Initialize AOS
+      AOS.init({
+        duration: isMobile ? 600 : 800,  // Faster on mobile
+        easing: 'ease-out',
+        once: false,
+        mirror: !isMobile,  // No mirror on mobile (performance)
+        offset: isMobile ? 50 : 70,  // Lower trigger point on mobile
+        anchorPlacement: 'top-bottom',
+        disable: false,
+      });
+
+      // Force recalculation
+      AOS.refreshHard();
+    });
+  </script>
 </body>
 
 </html>
