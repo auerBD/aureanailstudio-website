@@ -34,8 +34,8 @@ main {
 .service-card,
 .service-text-block-1,
 .service-text-block-2,
-.about-hero-image
-{
+.about-hero
+.about-hero-image {
   overflow-x: hidden;
 }
 
