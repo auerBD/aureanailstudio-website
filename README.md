@@ -4,7 +4,7 @@ A professional, fully responsive bilingual website for a nail studio in Fürsten
 
 ## Live Demo
 
-- **Production:** [aureanailstudio.at](https://aureanailstudio.at) (Coming soon)
+- **Production:** [aureanailstudio.at](https://aureanailstudio.at)
 - **Staging:** [GitHub Pages](https://auerBD.github.io/aureanailstudio-website/)
 
 ## Project Overview
