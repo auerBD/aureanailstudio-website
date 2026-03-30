@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional nail design in Fürstenfeld. Individual manicures, modern techniques, and high-quality products for beautiful, healthy nails.">
+    <meta name="description"
+        content="Professional nail design in Fürstenfeld. Individual manicures, modern techniques, and high-quality products for beautiful, healthy nails.">
     <title>aurea. | Nailstudio</title>
 
     <!-- DNS Prefetch -->
@@ -69,14 +70,15 @@
     </noscript>
 
     <!-- AOS CSS (async) -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
-            <!-- Privacy-friendly analytics by Plausible -->
+    <!-- Privacy-friendly analytics by Plausible -->
     <script async src="https://plausible.io/js/pa-vnMiclycfhAvdTPovxFt3.js"></script>
     <script>
-      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-      plausible.init()
+        window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) }, plausible.init = plausible.init || function (i) { plausible.o = i || {} };
+        plausible.init()
     </script>
+</head>
 
 <body>
     <!-- Header mit Navigation -->
@@ -267,43 +269,24 @@
             </div>
         </div>
     </footer>
-<script defer src="js/script.js"></script>
-<script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            if (window.innerWidth >= 768) {
+                AOS.init({
+                    duration: 800,
+                    easing: "ease-out",
+                    once: false,
+                    mirror: true,
+                    offset: 70,
+                    anchorPlacement: "top-bottom"
+                });
 
-<script>
-window.addEventListener('load', function() {
-    const isMobile = window.innerWidth < 768;
-
-    // Mobile optimizations
-    if (isMobile) {
-        
-        // Convert side animations to fade-up (prevents horizontal scroll)
-        document.querySelectorAll('[data-aos="fade-left"], [data-aos="fade-right"]').forEach(el => {
-            el.setAttribute('data-aos', 'fade-up');
-            el.setAttribute('data-aos-duration', '600');
+                AOS.refreshHard();
+            }
         });
-    }
-
-    // Reset all animations
-    document.querySelectorAll('[data-aos]').forEach(el => {
-        el.classList.remove('aos-animate');
-    });
-
-    // Initialize AOS
-    AOS.init({
-        duration: isMobile ? 600 : 800,  // Faster on mobile
-        easing: 'ease-out',
-        once: false,
-        mirror: !isMobile,  // No mirror on mobile (performance)
-        offset: isMobile ? 50 : 70,  // Lower trigger point on mobile
-        anchorPlacement: 'top-bottom',
-        disable: false,
-    });
-
-    // Force recalculation
-    AOS.refreshHard();
-});
-</script>
-
+    </script>
 </body>
+
 </html>

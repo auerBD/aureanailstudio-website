@@ -26,19 +26,6 @@ main {
     flex: 1;
 }
 
-.hero,
-.tagline-section,
-.voucher-section,
-.product-section,
-.services-hero-text,
-.service-card,
-.service-text-block-1,
-.service-text-block-2,
-.about-hero,
-.about-hero-image {
-  overflow-x: hidden;
-}
-
 /* Header and Navigation */
 header {
     background-color: #FFFFFF;
@@ -728,6 +715,7 @@ footer {
 .gallery-full-item:hover img {
     transform: scale(1.05);
 }
+
 /* ============================================
    SERVICES PAGE STYLES
    ============================================ */
@@ -851,6 +839,7 @@ footer {
     color: #18181B;
     margin-bottom: 2rem;
 }
+
 /* ============================================
    CONTACT PAGE STYLES
    ============================================ */
@@ -1145,6 +1134,7 @@ footer {
    ============================================ */
 
 @media (max-width: 1024px) and (min-width: 769px) {
+
     /* Navigation */
     nav {
         padding: 1.5rem 2rem;
@@ -1315,9 +1305,23 @@ footer {
 }
 
 @media (max-width: 768px) {
+
     /* Hamburger menu */
     .hamburger {
         display: flex;
+    }
+
+    @media (max-width: 767px) {
+
+        [data-aos],
+        [data-aos].aos-animate,
+        .aos-init,
+        .aos-animate {
+            opacity: 1 !important;
+            transform: none !important;
+            transition: none !important;
+            animation: none !important;
+        }
     }
 
     .nav-menu {
@@ -1471,6 +1475,7 @@ footer {
         padding: 1.5rem 1.5rem 0.5rem 1.5rem;
         gap: 2rem;
     }
+
     .voucher-section {
         grid-template-columns: 1fr;
         padding: 1.5rem 1.5rem 3rem 1.5rem;
@@ -1492,7 +1497,7 @@ footer {
     }
 
     .voucher-content p {
-    font-size: 14px;
+        font-size: 14px;
     }
 
     /* Gallery page mobile */
@@ -1525,13 +1530,37 @@ footer {
         padding: 1.5rem 1.5rem;
     }
 
-   /* Target each element by its position in the HTML */
-    .services-grid > div:nth-child(1) { order: 1; } /* Hero text */
-    .services-grid > div:nth-child(2) { order: 2; } /* Neuset card */
-    .services-grid > div:nth-child(4) { order: 3; } /* text-block-1 */
-    .services-grid > div:nth-child(3) { order: 4; } /* Refill card */
-    .services-grid > div:nth-child(5) { order: 5; } /* text-block-2 */
-    .services-grid > div:nth-child(6) { order: 6; } /* Zusatzservice card */
+    /* Target each element by its position in the HTML */
+    .services-grid>div:nth-child(1) {
+        order: 1;
+    }
+
+    /* Hero text */
+    .services-grid>div:nth-child(2) {
+        order: 2;
+    }
+
+    /* Neuset card */
+    .services-grid>div:nth-child(4) {
+        order: 3;
+    }
+
+    /* text-block-1 */
+    .services-grid>div:nth-child(3) {
+        order: 4;
+    }
+
+    /* Refill card */
+    .services-grid>div:nth-child(5) {
+        order: 5;
+    }
+
+    /* text-block-2 */
+    .services-grid>div:nth-child(6) {
+        order: 6;
+    }
+
+    /* Zusatzservice card */
 
     .services-hero-text h1 {
         font-size: 20px;
@@ -1563,7 +1592,7 @@ footer {
         font-size: 14px;
     }
 
-        .about-cta-section {
+    .about-cta-section {
         padding: 4rem 1.5rem;
     }
 
@@ -1575,7 +1604,7 @@ footer {
         font-size: 14px;
     }
 
-     /* Contact page mobile */
+    /* Contact page mobile */
     .contact-section {
         padding: 4rem 1.5rem;
     }
