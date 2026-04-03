@@ -576,6 +576,18 @@ footer {
     opacity: 0.7;
 }
 
+.footer-developer {
+    padding-top: 1rem;
+    display: flex;
+}
+
+.footer-developer a {
+    font-size: 12px;
+    color: #18181B;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
 .footer-middle h4,
 .footer-right h4,
 .footer-location h4,
