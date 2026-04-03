@@ -27,8 +27,8 @@ This project was developed as a freelance commission for Aurea Nail Studio, a lo
 - **Custom 404 Pages** - Branded error pages in both languages
 
 ### Technical Features
-- **Performance Optimized** - Lazy loading images, compressed assets, optimized load times
-- **SEO Optimized** - Meta tags, Open Graph, structured data (Schema.org)
+- **Performance Optimized** - Compressed assets, optimized load times
+- **SEO Optimized** - Meta tags, Open Graph
 - **Accessibility Focused** - Semantic HTML, ARIA labels, keyboard navigation
 - **GDPR Compliant** - Privacy policy, cookie-free analytics, consent management
 - **Privacy-Friendly Analytics** - Plausible Analytics integration (no cookies required)
@@ -39,6 +39,7 @@ This project was developed as a freelance commission for Aurea Nail Studio, a lo
 - **HTML5** - Semantic markup
 - **CSS3** - Flexbox, Grid, Custom Properties
 - **JavaScript (ES6+)** - Vanilla JS, no frameworks
+- **AOS** - animations
 
 ### Services & APIs
 - **Basin** - Contact form handling (EU servers)
@@ -195,7 +196,7 @@ python3 -m http.server 8000
 ## Testing
 
 ### Manual Testing
-- ✅ Tested on 5+ devices (mobile, tablet, desktop)
+- ✅ Tested on 8+ devices (mobile, tablet, desktop)
 - ✅ Cross-browser testing (Chrome, Firefox, Safari, Edge)
 - ✅ Form submission testing
 - ✅ Navigation testing (all links)
@@ -252,7 +253,7 @@ This is a private client project. All rights reserved.
 ## Developer
 
 **Bence Daniel Auer**  
-- Portfolio: [yourportfolio.com](https://yourportfolio.com)
+- Portfolio: [benceauer.at](https://benceauer.at)
 - LinkedIn: [linkedin.com/in/bence-auer/](https://linkedin.com/in/bence-auer/)
 - GitHub: [@auerBD](https://github.com/auerBD)
 - Email: batfaib@gmail.com
@@ -260,27 +261,11 @@ This is a private client project. All rights reserved.
 ## Acknowledgments
 
 - Client: Bianca, Aurea Nail Studio
-- Design inspiration: Original Figma mockup by client
-- Icons: Custom designed
+- Design: Figma mockups desigend by me
 - Images: Client-provided photography
 
 ---
 
 **Last Updated:** March 2026
-
-## Screenshots
-
-### Desktop View
-![Homepage Desktop](screenshots/desktop-home.png)
-![Gallery Desktop](screenshots/desktop-gallery.png)
-
-### Mobile View
-![Homepage Mobile](screenshots/mobile-home.png)
-![Menu Mobile](screenshots/mobile-menu.png)
-
-### Tablet View
-![Services Tablet](screenshots/tablet-services.png)
-
----
 
 *Built with ❤️ for beautiful websites*
