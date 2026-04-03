@@ -261,7 +261,7 @@ This is a private client project. All rights reserved.
 ## Acknowledgments
 
 - Client: Bianca, Aurea Nail Studio
-- Design: Figma mockups desigend by me
+- Design: Figma mockups designed by me
 - Images: Client-provided photography
 
 ---
